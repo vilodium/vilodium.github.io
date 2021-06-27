@@ -27,7 +27,7 @@ body{
   background-color: #37373d;
   color: white;
   padding: 10px;
-  line-height: 250%;
+  line-height: 300%;
 }
 a {
   text-decoration: none;
@@ -151,7 +151,7 @@ b{
 }
 .link-border{
   border: white 3px solid;
-  padding: 25px;
+  padding: 5px;
   border-radius: 25px;
   background-color: #19191c;
 }
