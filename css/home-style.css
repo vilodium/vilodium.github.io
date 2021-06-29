@@ -47,6 +47,74 @@ h1 {
   font-size: 55px;
   color: white;
   display: block;
+  text-shadow: 2px 2px 4px blue;
+}
+.vilodium{
+  animation: move linear 2000ms infinite;
+  font-family: var(--main-font);
+  color: white;
+}
+@keyframes move {
+  0% {
+    text-shadow:
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1), 
+      0px -0px 0 hsla(0, 100%, 50%, 1), 
+      0px -0px 0 hsla(0, 100%, 50%, 1),
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1), 
+      -0px 0px 0 hsla(180, 100%, 50%, 1), 
+      -0px 0px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1), 
+      -0px -0px 0 hsla(180, 100%, 50%, 1), 
+      -0px -0px 0 hsla(180, 100%, 50%, 1),
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1), 
+      0px 0px 0 hsla(0, 100%, 50%, 1), 
+      0px 0px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1), 
+      -0px 0px 0 hsla(0, 100%, 50%, 1), 
+      -0px 0px 0 hsla(0, 100%, 50%, 1),
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1), 
+      0px -0px 0 hsla(180, 100%, 50%, 1), 
+      0px -0px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1), 
+      0px 0px 0 hsla(180, 100%, 50%, 1), 
+      0px 0px 0 hsla(180, 100%, 50%, 1),
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1), 
+      -0px -0px 0 hsla(0, 100%, 50%, 1), 
+      -0px -0px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1), 
+      0px -0px 0 hsla(0, 100%, 50%, 1), 
+      0px -0px 0 hsla(0, 100%, 50%, 1),
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1), 
+      -0px 0px 0 hsla(180, 100%, 50%, 1), 
+      -0px 0px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
 }
 b{
   font-size: 30px;
@@ -62,7 +130,7 @@ b{
 }
 .the-header{
   width: 100%;
-  position: absolute ;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -159,8 +227,17 @@ b{
   border: white 1px double;
   padding: 15px;
   border-radius: 15px;
-  margin-top: 10%;
+  margin-top: 7%;
   background-color: #252528;
+}
+footer{
+  position: absolute;
+  left: 0;
+  bottom: 1;
+  width: 100%;
+  background-color: #212122;
+  color: white;
+  text-align: center;
 }
 
 /* MEDIA */
