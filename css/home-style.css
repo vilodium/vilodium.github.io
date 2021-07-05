@@ -31,6 +31,13 @@ body{
 }
 a {
   text-decoration: none;
+  color: goldenrod;
+}
+a:hover{
+  color: red;
+}
+a:visited{
+  color: white;
 }
 ul{
   list-style: none;
@@ -230,6 +237,19 @@ b{
   margin-top: 7%;
   background-color: #252528;
 }
+.visitors{
+  border: #171718 5px solid;
+  padding: 35px 3px 35px 3px;
+  border-radius: 20px;
+  margin-top: 5px;
+  background-color: #232422;
+}
+.count-container{
+  padding-right: 35%;
+  padding-left: 35%;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
 footer{
   position: absolute;
   left: 0;
@@ -239,25 +259,36 @@ footer{
   color: white;
   text-align: center;
 }
+.project{
+  font-family: var(--main-font);
+}
 
 /* MEDIA */
 
-@media screen and (max-width: 332px){
+@media screen and (max-width: 360px){
   .nav_logo {
     font-size: 1.5rem;
   }
   .email{
   font-size: 15px;
   }
-  
+  .count-container{
+  padding-right: 5%;
+  padding-left: 5%;
+  }
+
 
 }
 @media screen and (max-width: 230px){
   .nav_logo {
     font-size: 1rem;
   }
-    .email{
+  .email{
   font-size: 10px;
+  }
+  .count-container{
+  padding-right: 3%;
+  padding-left: 3%;
   }
   
 }
