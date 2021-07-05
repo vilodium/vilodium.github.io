@@ -24,7 +24,7 @@ body{
   font-size: var(--normal-font);
   color: var(--secondry-color);
   text-align: center;
-  background-color: #37373d;
+  background-color: #2b2b2f;
   color: white;
   padding: 10px;
   line-height: 300%;
@@ -238,11 +238,11 @@ b{
   background-color: #252528;
 }
 .visitors{
-  border: #171718 5px solid;
+  border: white 2px solid;
   padding: 35px 3px 35px 3px;
   border-radius: 20px;
   margin-top: 5px;
-  background-color: #232422;
+  background-color: #252528;
 }
 .count-container{
   padding-right: 35%;
